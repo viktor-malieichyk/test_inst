@@ -126,45 +126,27 @@ class Cache {
         return entities.first
     }
     
-    private func fetchPosts(context: NSManagedObjectContext) -> [PostEntity] {
-        var entities: [PostEntity] = []
+    private func fetchEntities<T: NSManagedObject & Identifiable>(context: NSManagedObjectContext) -> [T] {
+        var entities: [T] = []
         do {
-            let fetchRequest = PostEntity.fetchRequest()
-            
-            entities = try context.fetch(fetchRequest)
+            let fetchRequest = T.fetchRequest()
+            entities = try context.fetch(fetchRequest).compactMap { $0 as? T }
         }
         catch let error {
             print(error)
         }
         
-        return entities.sorted { entity1, entity2 in
-            entity1.id < entity2.id
-        }
-    }
-    
-    private func fetchUsers(context: NSManagedObjectContext) -> [UserEntity] {
-        var entities: [UserEntity] = []
-        do {
-            let fetchRequest = UserEntity.fetchRequest()
-            
-            entities = try context.fetch(fetchRequest)
-        }
-        catch let error {
-            print(error)
-        }
-        
-        return entities.sorted { entity1, entity2 in
-            entity1.id < entity2.id
-        }
+        entities.sort { $0.id < $1.id }
+        return entities
     }
     
     func fetchPostModels() -> [Post] {
-        let entities = fetchPosts(context: container.managedContext)
+        let entities: [PostEntity] = fetchEntities(context: container.managedContext)
         return entities.map { $0.toApiModel() }
     }
     
     func fetchUserModels() -> [UserData] {
-        let entities = fetchUsers(context: container.managedContext)
+        let entities: [UserEntity] = fetchEntities(context: container.managedContext)
         return entities.map { $0.toApiModel() }
     }
 }
