@@ -46,7 +46,7 @@ class Repository {
                 case let .success(metadata):
                     self.metadataDict[.post] = .init(total: metadata.total, page: metadata.page, perPage: metadata.perPage)
                     completion(.success(metadata.data))
-                    self.cache.storePosts(metadata.data)
+                    self.cache.storeEntity(metadata.data, entityType: PostEntity.self)
                 case let .failure(error):
                     completion(.failure(error))
                 }
@@ -70,7 +70,7 @@ class Repository {
                 case let .success(metadata):
                     self.metadataDict[.user] = .init(total: metadata.total, page: metadata.page, perPage: metadata.perPage)
                     completion(.success(metadata.data))
-                    self.cache.storeUsers(metadata.data)
+                    self.cache.storeEntity(metadata.data, entityType: UserEntity.self)
                 case let .failure(error):
                     completion(.failure(error))
                 }

@@ -7,8 +7,12 @@
 
 import CoreData
 
+protocol ApiModelIdentifiable {
+    var id: Int32 { get }
+}
+
 protocol ManagedObjectConvertible {
-    associatedtype ApiModelType
+    associatedtype ApiModelType: ApiModelIdentifiable
     
     static func update(_ entity: Self, _ model: ApiModelType)
     
@@ -18,6 +22,8 @@ protocol ManagedObjectConvertible {
     func toApiModel() -> ApiModelType
 }
 
+extension UserData: ApiModelIdentifiable {}
+extension Post: ApiModelIdentifiable {}
 
 extension UserEntity: ManagedObjectConvertible {
     typealias ApiModelType = UserData

@@ -56,40 +56,19 @@ class Cache {
         self.container = container
     }
     
-    func storePosts(_ posts: [Post]) {
+    func storeEntity<T: NSManagedObject & ManagedObjectConvertible>(_ posts: [T.ApiModelType], entityType: T.Type) {
         bacgroundQueue.async {
             let context = self.container.getDisposableContext()
             let entities = posts.map {
-                if let entity = self.findEntity(id: $0.id, entityType: PostEntity.self, context: context) {
-                    PostEntity.update(entity, $0)
+                if let entity = self.findEntity(id: $0.id, entityType: T.self, context: context) {
+                    T.update(entity, $0)
                     return entity
                 } else {
-                    return PostEntity.fromApiModel($0, context: context)
+                    return T.fromApiModel($0, context: context)
                 }
             }
             
-            print(entities.count)
-            
-            context.trySaveContext()
-            DispatchQueue.main.async {
-                self.container.managedContext.trySaveContext()
-            }
-        }
-    }
-    
-    func storeUsers(_ users: [UserData]) {
-        bacgroundQueue.async {
-            let context = self.container.getDisposableContext()
-            let entities = users.map {
-                if let entity = self.findEntity(id: $0.id, entityType: UserEntity.self, context: context) {
-                    UserEntity.update(entity, $0)
-                    return entity
-                } else {
-                    return UserEntity.fromApiModel($0, context: context)
-                }
-            }
-            
-            print(entities.count)
+            print("### stored \(T.self) \(entities.count)")
             
             context.trySaveContext()
             DispatchQueue.main.async {
