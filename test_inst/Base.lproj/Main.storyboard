@@ -8,6 +8,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Stories View Controller-->
+        <scene sceneID="Tcr-Gc-JhP">
+            <objects>
+                <collectionViewController restorationIdentifier="StoriesViewController" storyboardIdentifier="StoriesViewController" id="Plg-LX-orN" customClass="StoriesViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="q1W-yf-N9c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="Kaw-TQ-98q" customClass="StoryLayout" customModule="test_inst" customModuleProvider="target"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Plg-LX-orN" id="mpE-Mu-wAp"/>
+                            <outlet property="delegate" destination="Plg-LX-orN" id="y5s-iD-Py7"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3L1-4b-2kY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="-706"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TC3-J3-1tR">
-                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <rect key="frame" x="0.0" y="735" width="393" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="house.fill" catalog="system" id="0zs-CP-yPP">
@@ -55,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-312.21374045801525" y="-7.042253521126761"/>
         </scene>
-        <!--View Controller-->
+        <!--Posts View Controller-->
         <scene sceneID="bPu-Wc-gfN">
             <objects>
-                <collectionViewController id="lrh-aI-PSx" customClass="ViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="lrh-aI-PSx" customClass="PostsViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g5a-Fv-peM" customClass="ViewControlelr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="710"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
