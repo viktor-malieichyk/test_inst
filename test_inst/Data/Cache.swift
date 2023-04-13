@@ -60,7 +60,7 @@ class Cache {
         bacgroundQueue.async {
             let context = self.container.getDisposableContext()
             let entities = posts.map {
-                if let entity = self.findPost(id: $0.id, context: context) {
+                if let entity = self.findEntity(id: $0.id, entityType: PostEntity.self, context: context) {
                     PostEntity.update(entity, $0)
                     return entity
                 } else {
@@ -81,7 +81,7 @@ class Cache {
         bacgroundQueue.async {
             let context = self.container.getDisposableContext()
             let entities = users.map {
-                if let entity = self.findUser(id: $0.id, context: context) {
+                if let entity = self.findEntity(id: $0.id, entityType: UserEntity.self, context: context) {
                     UserEntity.update(entity, $0)
                     return entity
                 } else {
@@ -97,27 +97,13 @@ class Cache {
             }
         }
     }
-    
-    func findUser(id: Int32, context: NSManagedObjectContext) -> UserEntity? {
-        var entities: [UserEntity] = []
+
+    func findEntity<T: NSManagedObject>(id: Int32, entityType: T.Type, context: NSManagedObjectContext) -> T? {
+        var entities: [T] = []
         do {
-            let fetchRequest = UserEntity.fetchRequest()
+            let fetchRequest = T.fetchRequest()
             fetchRequest.predicate = NSPredicate(format: "id == \(id)")
-            entities = try context.fetch(fetchRequest)
-        }
-        catch let error {
-            print(error)
-        }
-        
-        return entities.first
-    }
-    
-    func findPost(id: Int32, context: NSManagedObjectContext) -> PostEntity? {
-        var entities: [PostEntity] = []
-        do {
-            let fetchRequest = PostEntity.fetchRequest()
-            fetchRequest.predicate = NSPredicate(format: "id == \(id)")
-            entities = try context.fetch(fetchRequest)
+            entities = try context.fetch(fetchRequest).compactMap { $0 as? T }
         }
         catch let error {
             print(error)
@@ -140,8 +126,8 @@ class Cache {
         return entities
     }
     
-    func fetchModels<Entity: NSManagedObject & Identifiable, Model>(entityType: Entity.Type) -> [Model] where Entity: ManagedObjectConvertible, Model == Entity.ApiModelType {
-        let entities: [Entity] = fetchEntities(context: container.managedContext)
+    func fetchModels<T: NSManagedObject & Identifiable, Model>(entityType: T.Type) -> [Model] where T: ManagedObjectConvertible, Model == T.ApiModelType {
+        let entities: [T] = fetchEntities(context: container.managedContext)
         return entities.map { $0.toApiModel() }
     }
 }
