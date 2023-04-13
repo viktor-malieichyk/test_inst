@@ -8,6 +8,8 @@
 import UIKit
 
 class StoriesViewController: UICollectionViewController {
+    var repository = Repository.shared
+    
     private var items: [UserData] = [] {
         didSet {
             collectionView.reloadData()
@@ -19,20 +21,35 @@ class StoriesViewController: UICollectionViewController {
         
         collectionView.registerClass(AvatarViewCell.self)
         
-        Repository.shared.getUsers { result in
+        getItems(page: .first)
+    }
+    
+    func getItems(page: Repository.Page) {
+        repository.getUsers(page: page) { result in
             switch result {
                 
             case .success(let items):
                 DispatchQueue.main.async {
-                    self.items = items
+                    switch page {
+                    case .some(_):
+                        self.items.append(contentsOf: items)
+                        self.items = self.items.removeDuplicates()
+                    case .next:
+                        self.items.append(contentsOf: items)
+                        self.items = self.items.removeDuplicates()
+                    case .first:
+                        self.items = items
+                    }
+                    
+                    print(items.count)
+                    self.collectionView.reloadData()
                 }
                 
-                print("#### \(items.count)")
+                print("#### func getItems(page: Repository.Page)  \(items.count)")
             case .failure(let error):
                 print("#### \(error)")
             }
         }
-    
     }
 }
 
@@ -45,6 +62,10 @@ extension StoriesViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: AvatarViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setUser(items[indexPath.row])
+        
+        if items.count - 1 == indexPath.row {
+            if repository.hasMore(.user) { getItems(page: .next) }
+        }
         
         return cell
     }

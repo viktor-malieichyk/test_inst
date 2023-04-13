@@ -16,8 +16,8 @@ enum IMDBServiceError: Error {
 }
 
 protocol InstService {
-    func getStories(completion: @escaping (Result<Stories, Error>) -> Void)
-    func getPosts(completion: @escaping (Result<Posts, Error>) -> Void)
+    func getStories(page: Int?, completion: @escaping (Result<Stories, Error>) -> Void)
+    func getPosts(page: Int?, completion: @escaping (Result<Posts, Error>) -> Void)
 }
 
 class InstServiceImpl: InstService {
@@ -53,8 +53,9 @@ class InstServiceImpl: InstService {
         }
     }
     
-    func getStories(completion: @escaping (Result<Stories, Error>) -> Void) {
-        let urlString = "\(baseUrl)/users"
+    func getStories(page: Int? = nil, completion: @escaping (Result<Stories, Error>) -> Void) {
+        let pageStr = page != nil ? "?page=\(page!)" : ""
+        let urlString = "\(baseUrl)/users" + pageStr
         performRequest(with: urlString, decodingType: Stories.self) { result in
             switch result {
             case .success(let data):
@@ -65,8 +66,9 @@ class InstServiceImpl: InstService {
         }
     }
     
-    func getPosts(completion: @escaping (Result<Posts, Error>) -> Void) {
-        let urlString = "\(baseUrl)/unknows"
+    func getPosts(page: Int? = nil, completion: @escaping (Result<Posts, Error>) -> Void) {
+        let pageStr = page != nil ? "?page=\(page!)" : ""
+        let urlString = "\(baseUrl)/unknows" + pageStr
         performRequest(with: urlString, decodingType: Posts.self) { result in
             switch result {
             case .success(let data):

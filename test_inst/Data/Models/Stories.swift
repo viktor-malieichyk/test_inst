@@ -45,3 +45,9 @@ struct SupportData: Codable {
     let url: String
     let text: String
 }
+
+extension UserData: Equatable {
+    static func ==(lhs: UserData, rhs: UserData) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

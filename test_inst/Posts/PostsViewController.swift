@@ -8,6 +8,8 @@
 import UIKit
 
 class PostsViewController: UICollectionViewController {
+    var repository = Repository.shared
+    
     private var items: [Post] = [] {
         didSet {
             collectionView.reloadData()
@@ -22,23 +24,39 @@ class PostsViewController: UICollectionViewController {
         collectionView.registerClass(InstagramPostCell.self)
         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
         
-        Repository.shared.getPosts { result in
+        createStoriesSubview()
+        
+        getItems(page: .first)
+    }
+    
+    
+    func getItems(page: Repository.Page) {
+        repository.getPosts(page: page) { result in
             switch result {
                 
             case .success(let items):
                 DispatchQueue.main.async {
-                    self.items = items
+                    switch page {
+                    case .some(_):
+                        self.items.append(contentsOf: items)
+                        self.items = self.items.removeDuplicates()
+                    case .next:
+                        self.items.append(contentsOf: items)
+                        self.items = self.items.removeDuplicates()
+                    case .first:
+                        self.items = items
+                    }
+                    
+                    print(items.count)
+                    self.collectionView.reloadData()
                 }
                 
-                print("#### \(items.count)")
+                print("#### func getItems(page: Repository.Page)  \(items.count)")
             case .failure(let error):
                 print("#### \(error)")
             }
         }
-        
-        createStoriesSubview()
     }
-    
     func createStoriesSubview() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "StoriesViewController") as? StoriesViewController else { return }
@@ -91,6 +109,10 @@ extension PostsViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: InstagramPostCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setPost(items[indexPath.row])
+        
+        if items.count - 1 == indexPath.row {
+            if repository.hasMore(.post) { getItems(page: .next) }
+        }
         
         return cell
     }

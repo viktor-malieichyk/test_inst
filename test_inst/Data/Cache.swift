@@ -59,7 +59,14 @@ class Cache {
     func storePosts(_ posts: [Post]) {
         bacgroundQueue.async {
             let context = self.container.getDisposableContext()
-            let entities = posts.map{ PostEntity.fromApiModel($0, context: context) }
+            let entities = posts.map {
+                if let entity = self.findPost(id: $0.id, context: context) {
+                    PostEntity.update(entity, $0)
+                    return entity
+                } else {
+                    return PostEntity.fromApiModel($0, context: context)
+                }
+            }
             
             print(entities.count)
             
@@ -73,7 +80,14 @@ class Cache {
     func storeUsers(_ users: [UserData]) {
         bacgroundQueue.async {
             let context = self.container.getDisposableContext()
-            let entities = users.map{ UserEntity.fromApiModel($0, context: context) }
+            let entities = users.map {
+                if let entity = self.findUser(id: $0.id, context: context) {
+                    UserEntity.update(entity, $0)
+                    return entity
+                } else {
+                    return UserEntity.fromApiModel($0, context: context)
+                }
+            }
             
             print(entities.count)
             
@@ -82,6 +96,34 @@ class Cache {
                 self.container.managedContext.trySaveContext()
             }
         }
+    }
+    
+    func findUser(id: Int32, context: NSManagedObjectContext) -> UserEntity? {
+        var entities: [UserEntity] = []
+        do {
+            let fetchRequest = UserEntity.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == \(id)")
+            entities = try context.fetch(fetchRequest)
+        }
+        catch let error {
+            print(error)
+        }
+        
+        return entities.first
+    }
+    
+    func findPost(id: Int32, context: NSManagedObjectContext) -> PostEntity? {
+        var entities: [PostEntity] = []
+        do {
+            let fetchRequest = PostEntity.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == \(id)")
+            entities = try context.fetch(fetchRequest)
+        }
+        catch let error {
+            print(error)
+        }
+        
+        return entities.first
     }
     
     private func fetchPosts(context: NSManagedObjectContext) -> [PostEntity] {
@@ -95,7 +137,9 @@ class Cache {
             print(error)
         }
         
-        return entities
+        return entities.sorted { entity1, entity2 in
+            entity1.id < entity2.id
+        }
     }
     
     private func fetchUsers(context: NSManagedObjectContext) -> [UserEntity] {
@@ -109,7 +153,9 @@ class Cache {
             print(error)
         }
         
-        return entities
+        return entities.sorted { entity1, entity2 in
+            entity1.id < entity2.id
+        }
     }
     
     func fetchPostModels() -> [Post] {

@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DCCDD4E0-E1E8-4A7C-86E4-12A714AF65C4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_inst/Stories/AvatarViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "layoutSubviews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,14 +24,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CC14D4F9-1AA3-436C-A7EE-41F2915AE444"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_inst/Stories/AvatarViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "setupViews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -325,102 +325,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5CA427C5-2BB1-411F-AF6F-EC50AAA22346"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test_inst/Data/Cache.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "storeUsers(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5CA427C5-2BB1-411F-AF6F-EC50AAA22346 - 7f62e37aa3541466"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in test_inst.Cache.storeUsers(Swift.Array&lt;test_inst.UserData&gt;) -&gt; ()"
-                  moduleName = "test_inst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "420">
-               </Location>
-               <Location
-                  uuid = "5CA427C5-2BB1-411F-AF6F-EC50AAA22346 - 7f62e37aa3541466"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in test_inst.Cache.storeUsers(Swift.Array&lt;test_inst.UserData&gt;) -&gt; ()"
-                  moduleName = "test_inst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "636">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A4BB487C-A744-4CBD-A01B-09C5A234B15A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test_inst/Data/Cache.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "storePosts(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A4BB487C-A744-4CBD-A01B-09C5A234B15A - ceb5b84367bca7d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in test_inst.Cache.storePosts(Swift.Array&lt;test_inst.Post&gt;) -&gt; ()"
-                  moduleName = "test_inst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "420">
-               </Location>
-               <Location
-                  uuid = "A4BB487C-A744-4CBD-A01B-09C5A234B15A - ceb5b84367bca7d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in test_inst.Cache.storePosts(Swift.Array&lt;test_inst.Post&gt;) -&gt; ()"
-                  moduleName = "test_inst"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "636">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "238F37E3-8E8E-400F-86FA-2DC63281BE93"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -572,8 +476,8 @@
             filePath = "test_inst/Posts/PostsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "collectionView(_:layout:referenceSizeForHeaderInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -588,9 +492,567 @@
             filePath = "test_inst/Posts/PostsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "collectionView(_:viewForSupplementaryElementOfKind:at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A14F765-7802-4D8A-BBE7-F2A5A00F4523"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Stories/StoriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getItems(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3586D42E-65F4-4C7F-B7F0-E868AAAA7849"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Stories/StoriesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getItems(page:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3586D42E-65F4-4C7F-B7F0-E868AAAA7849 - 586e09cbd54c8b3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.StoriesViewController.getItems(page: test_inst.Repository.Page) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Stories/StoriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3586D42E-65F4-4C7F-B7F0-E868AAAA7849 - b2d262218e782739"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; () in test_inst.StoriesViewController.getItems(page: test_inst.Repository.Page) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Stories/StoriesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52996778-6648-4A34-9AC4-5F5DB4AE053E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getUsers(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52996778-6648-4A34-9AC4-5F5DB4AE053E - 4153fac37b96e270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "848">
+               </Location>
+               <Location
+                  uuid = "52996778-6648-4A34-9AC4-5F5DB4AE053E - 4153fac37b96e270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEFE08D0-368F-43FA-8277-6D43CD2B0802"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "getUsers(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AEFE08D0-368F-43FA-8277-6D43CD2B0802 - 1ba7e2ffc0aae7c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Stories, Swift.Error&gt;) -&gt; () in test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "AEFE08D0-368F-43FA-8277-6D43CD2B0802 - 4153fac37b96e38f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "1944">
+               </Location>
+               <Location
+                  uuid = "AEFE08D0-368F-43FA-8277-6D43CD2B0802 - 1ba7e2ffc0aae702"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Stories, Swift.Error&gt;) -&gt; () in test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09150B84-9806-414F-A7DD-45F13D481326"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "getUsers(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "09150B84-9806-414F-A7DD-45F13D481326 - 1ba7e2ffc0aae761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Stories, Swift.Error&gt;) -&gt; () in test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "09150B84-9806-414F-A7DD-45F13D481326 - 1ba7e2ffc0aae761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Stories, Swift.Error&gt;) -&gt; () in test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60BB607F-0209-4003-8639-0595E75C9154"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getPosts(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60BB607F-0209-4003-8639-0595E75C9154 - d389359187a756a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getPosts(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.Post&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1532">
+               </Location>
+               <Location
+                  uuid = "60BB607F-0209-4003-8639-0595E75C9154 - 7f405ce6930dd617"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Posts, Swift.Error&gt;) -&gt; () in test_inst.Repository.getPosts(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.Post&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "60BB607F-0209-4003-8639-0595E75C9154 - d389359187a75686"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getPosts(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.Post&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D6979AE-EFC6-424A-BF9A-416BB03D67D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getPosts(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D6979AE-EFC6-424A-BF9A-416BB03D67D9 - 7f405ce6930dd6f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Posts, Swift.Error&gt;) -&gt; () in test_inst.Repository.getPosts(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.Post&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "4D6979AE-EFC6-424A-BF9A-416BB03D67D9 - 7f405ce6930dd6f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;test_inst.Posts, Swift.Error&gt;) -&gt; () in test_inst.Repository.getPosts(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.Post&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21038F9F-2892-4611-BBD3-B49DB556EB62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "getUsers(page:forceReload:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "21038F9F-2892-4611-BBD3-B49DB556EB62 - 4153fac37b96e2d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "21038F9F-2892-4611-BBD3-B49DB556EB62 - 4153fac37b96e2d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.getUsers(page: test_inst.Repository.Page, forceReload: Swift.Bool, completion: (Swift.Result&lt;Swift.Array&lt;test_inst.UserData&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "486F8026-312A-48CA-8797-841CDC08CAF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "pageNumberFor(_:collection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "486F8026-312A-48CA-8797-841CDC08CAF8 - ae56135347ee25ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.pageNumberFor(_: test_inst.Repository.Page, collection: test_inst.Repository.SomeCollection) -&gt; Swift.Int"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "486F8026-312A-48CA-8797-841CDC08CAF8 - ae56135347ee25ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Repository.pageNumberFor(_: test_inst.Repository.Page, collection: test_inst.Repository.SomeCollection) -&gt; Swift.Int"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "623E1620-2783-4E3C-914C-2B6DDF8E2FDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Cache.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "findPost(id:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "623E1620-2783-4E3C-914C-2B6DDF8E2FDB - ef192f1933b6c58a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Cache.findPost(id: Swift.Int32, context: __C.NSManagedObjectContext) -&gt; Swift.Optional&lt;test_inst.PostEntity&gt;"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "623E1620-2783-4E3C-914C-2B6DDF8E2FDB - ef192f1933b6c58a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "test_inst.Cache.findPost(id: Swift.Int32, context: __C.NSManagedObjectContext) -&gt; Swift.Optional&lt;test_inst.PostEntity&gt;"
+                  moduleName = "test_inst"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viktor/Developer/test_inst/test_inst/Data/Cache.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "724">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9EC8B5A2-8766-4279-98AA-347255F15204"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Posts/PostsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0B37D43-9510-4BDF-920C-9CDB3AC4C90E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "hasMore(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35813BEF-1808-4431-B511-9091831D0D84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "hasMore(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A62958E2-DEBE-44FF-98A8-7D725F9AA782"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getUsers(page:forceReload:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1246B7AC-706A-4E69-877C-555FF631B74E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test_inst/Data/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getPosts(page:forceReload:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

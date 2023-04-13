@@ -45,3 +45,9 @@ struct Support: Codable {
     let url: String
     let text: String
 }
+
+extension Post: Equatable {
+    static func ==(lhs: Post, rhs: Post) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

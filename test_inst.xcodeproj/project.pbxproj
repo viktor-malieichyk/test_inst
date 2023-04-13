@@ -34,6 +34,7 @@
 		7715A6DF29E812F900EDAB5E /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715A6DB29E812F900EDAB5E /* UserEntity+CoreDataClass.swift */; };
 		7715A6E329E8163900EDAB5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715A6E229E8163900EDAB5E /* Extensions.swift */; };
 		7715A6E529E81D5500EDAB5E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715A6E429E81D5500EDAB5E /* RootViewController.swift */; };
+		7715A6E829E84F5200EDAB5E /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715A6E729E84F5200EDAB5E /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		7715A6DB29E812F900EDAB5E /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7715A6E229E8163900EDAB5E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7715A6E429E81D5500EDAB5E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		7715A6E629E8319A00EDAB5E /* test_inst 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "test_inst 2.xcdatamodel"; sourceTree = "<group>"; };
+		7715A6E729E84F5200EDAB5E /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,7 @@
 				7715A6CD29E7F5ED00EDAB5E /* UIImage.swift */,
 				7715A6D129E7FAFC00EDAB5E /* UIColor.swift */,
 				7715A6D329E804CB00EDAB5E /* UIViewExtensions.swift */,
+				7715A6E729E84F5200EDAB5E /* Array.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -377,6 +381,7 @@
 				7715A68829E7EA1E00EDAB5E /* test_inst.xcdatamodeld in Sources */,
 				7715A6DD29E812F900EDAB5E /* PostEntity+CoreDataClass.swift in Sources */,
 				7715A6C729E7EBC400EDAB5E /* Posts.swift in Sources */,
+				7715A6E829E84F5200EDAB5E /* Array.swift in Sources */,
 				7715A6B129E7EA4700EDAB5E /* StoriesViewController.swift in Sources */,
 				7715A6D029E7F73B00EDAB5E /* InstagramPostCell.swift in Sources */,
 				7715A6D429E804CB00EDAB5E /* UIViewExtensions.swift in Sources */,
@@ -727,6 +732,7 @@
 		7715A68629E7EA1E00EDAB5E /* test_inst.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7715A6E629E8319A00EDAB5E /* test_inst 2.xcdatamodel */,
 				7715A68729E7EA1E00EDAB5E /* test_inst.xcdatamodel */,
 			);
 			currentVersion = 7715A68729E7EA1E00EDAB5E /* test_inst.xcdatamodel */;

@@ -8,18 +8,24 @@
 import CoreData
 
 extension UserEntity {
-    @discardableResult
-    static func fromApiModel(_ model: UserData, context: NSManagedObjectContext) -> UserEntity {
-        let entity = UserEntity(context: context)
-
+    static func update(_ entity: UserEntity, _ model: UserData) {
         entity.setValue(model.id, forKey: "id")
         entity.setValue(model.email, forKey: "email")
         entity.setValue(model.firstName, forKey: "firstName")
         entity.setValue(model.lastName, forKey: "lastName")
         entity.setValue(model.avatar, forKey: "avatar")
+    }
+    
+    @discardableResult
+    static func fromApiModel(_ model: UserData, context: NSManagedObjectContext) -> UserEntity {
+        let entity = UserEntity(context: context)
+
+        update(entity, model)
         
         return entity
     }
+    
+    
     
     func toApiModel() -> UserData {
         let model = UserData(id: self.id ,
@@ -33,15 +39,19 @@ extension UserEntity {
 }
 
 extension PostEntity {
-    @discardableResult
-    static func fromApiModel(_ model: Post, context: NSManagedObjectContext) -> PostEntity {
-        let entity = PostEntity(context: context)
-
+    static func update(_ entity: PostEntity, _ model: Post) {
         entity.setValue(model.id, forKey: "id")
         entity.setValue(model.name, forKey: "name")
         entity.setValue(model.year, forKey: "year")
         entity.setValue(model.color, forKey: "color")
         entity.setValue(model.pantoneValue, forKey: "pantoneValue")
+    }
+    
+    @discardableResult
+    static func fromApiModel(_ model: Post, context: NSManagedObjectContext) -> PostEntity {
+        let entity = PostEntity(context: context)
+        
+        update(entity, model)
         
         return entity
     }

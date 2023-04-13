@@ -16,6 +16,7 @@ class AvatarViewCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.borderWidth = 2
         view.backgroundColor = .gray
+        view.contentMode = .scaleAspectFill
 
         view.clipsToBounds = true
         return view
