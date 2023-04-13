@@ -140,13 +140,8 @@ class Cache {
         return entities
     }
     
-    func fetchPostModels() -> [Post] {
-        let entities: [PostEntity] = fetchEntities(context: container.managedContext)
-        return entities.map { $0.toApiModel() }
-    }
-    
-    func fetchUserModels() -> [UserData] {
-        let entities: [UserEntity] = fetchEntities(context: container.managedContext)
+    func fetchModels<Entity: NSManagedObject & Identifiable, Model>(entityType: Entity.Type) -> [Model] where Entity: ManagedObjectConvertible, Model == Entity.ApiModelType {
+        let entities: [Entity] = fetchEntities(context: container.managedContext)
         return entities.map { $0.toApiModel() }
     }
 }

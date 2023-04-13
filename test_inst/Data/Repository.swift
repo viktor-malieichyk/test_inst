@@ -31,7 +31,7 @@ class Repository {
     }
     
     func getPosts(page: Page, forceReload: Bool = false, completion: @escaping (Result<[Post], Error>) -> Void) {
-        let posts = cache.fetchPostModels()
+        let posts = cache.fetchModels(entityType: PostEntity.self)
         let pageNumber = pageNumberFor(page, collection: .post)
         print("#### get page pageNumber \(#function)")
         if !posts.isEmpty && !forceReload && pageNumber == 1 {
@@ -55,7 +55,7 @@ class Repository {
     }
     
     func getUsers(page: Page, forceReload: Bool = false, completion: @escaping (Result<[UserData], Error>) -> Void) {
-        let posts = cache.fetchUserModels()
+        let posts = cache.fetchModels(entityType: UserEntity.self)
         let pageNumber = pageNumberFor(page, collection: .user)
         print("#### get page pageNumber \(#function)")
         if !posts.isEmpty && !forceReload && pageNumber == 1 {
