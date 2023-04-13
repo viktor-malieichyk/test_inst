@@ -7,7 +7,21 @@
 
 import CoreData
 
-extension UserEntity {
+protocol ManagedObjectConvertible {
+    associatedtype ApiModelType
+    
+    static func update(_ entity: Self, _ model: ApiModelType)
+    
+    @discardableResult
+    static func fromApiModel(_ model: ApiModelType, context: NSManagedObjectContext) -> Self
+    
+    func toApiModel() -> ApiModelType
+}
+
+
+extension UserEntity: ManagedObjectConvertible {
+    typealias ApiModelType = UserData
+    
     static func update(_ entity: UserEntity, _ model: UserData) {
         entity.setValue(model.id, forKey: "id")
         entity.setValue(model.email, forKey: "email")
@@ -17,15 +31,13 @@ extension UserEntity {
     }
     
     @discardableResult
-    static func fromApiModel(_ model: UserData, context: NSManagedObjectContext) -> UserEntity {
-        let entity = UserEntity(context: context)
+    static func fromApiModel(_ model: UserData, context: NSManagedObjectContext) -> Self {
+        let entity = Self(context: context)
 
         update(entity, model)
         
         return entity
     }
-    
-    
     
     func toApiModel() -> UserData {
         let model = UserData(id: self.id ,
@@ -38,7 +50,9 @@ extension UserEntity {
     }
 }
 
-extension PostEntity {
+extension PostEntity: ManagedObjectConvertible {
+    typealias ApiModelType = Post
+    
     static func update(_ entity: PostEntity, _ model: Post) {
         entity.setValue(model.id, forKey: "id")
         entity.setValue(model.name, forKey: "name")
@@ -48,8 +62,8 @@ extension PostEntity {
     }
     
     @discardableResult
-    static func fromApiModel(_ model: Post, context: NSManagedObjectContext) -> PostEntity {
-        let entity = PostEntity(context: context)
+    static func fromApiModel(_ model: Post, context: NSManagedObjectContext) -> Self {
+        let entity = Self(context: context)
         
         update(entity, model)
         
