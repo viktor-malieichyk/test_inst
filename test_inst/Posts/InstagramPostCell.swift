@@ -142,7 +142,7 @@ class InstagramPostCell: UICollectionViewCell {
     }
     
     func setPost(_ post: Post) {
-        postImageView.backgroundColor = .fromHexString(post.pantoneValue)
+        postImageView.backgroundColor = .fromHexString(post.color)
         postImageView.image = nil
         
         usernameLabel.text = post.name

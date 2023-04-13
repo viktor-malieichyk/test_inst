@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,10 +31,20 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tabBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IY-GA-HEE">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <connections>
+                                    <segue destination="lrh-aI-PSx" kind="embed" id="qbi-IV-aNS"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5IY-GA-HEE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="00n-fm-gcj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5IY-GA-HEE" secondAttribute="bottom" constant="49" id="2So-zR-1pZ"/>
+                            <constraint firstItem="5IY-GA-HEE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3k2-ed-thq"/>
+                            <constraint firstItem="5IY-GA-HEE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eqf-Ja-YUz"/>
                             <constraint firstItem="TC3-J3-1tR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NhQ-UD-7kc"/>
                             <constraint firstItem="TC3-J3-1tR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a0n-LL-dqC"/>
                             <constraint firstItem="TC3-J3-1tR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qJs-C7-FgP"/>
@@ -43,7 +53,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-13.380281690140846"/>
+            <point key="canvasLocation" x="-312.21374045801525" y="-7.042253521126761"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bPu-Wc-gfN">
+            <objects>
+                <collectionViewController id="lrh-aI-PSx" customClass="ViewController" customModule="test_inst" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g5a-Fv-peM" customClass="ViewControlelr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="710"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="hD4-jN-f8C" customClass="Instlayout" customModule="test_inst" customModuleProvider="target"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="lrh-aI-PSx" id="Y8t-ed-jMO"/>
+                            <outlet property="delegate" destination="lrh-aI-PSx" id="Bpm-zr-6Gs"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qk-ML-Oe3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-113"/>
         </scene>
     </scenes>
     <resources>

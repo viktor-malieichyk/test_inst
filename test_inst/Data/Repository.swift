@@ -11,6 +11,8 @@ class Repository {
     let networkService: InstService
     let cache: Cache
     
+    static let shared = Repository(networkService: InstServiceImpl(), cache: Cache(container: .init(modelName: "test_inst")))
+    
     init(networkService: InstService, cache: Cache) {
         self.networkService = networkService
         self.cache = cache
